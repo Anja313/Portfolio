@@ -24,11 +24,11 @@ export class FooterComponent implements OnInit {
 
   ngOnInit(): void{}
 
-icanLinks:any =[
-  'https://www.github.com/profile/Anja_Hovhannisyan/cv',
-  'https://www.LinkdIn.com/profile/Anja_Hovhannisyan/cv',
+  icanLinks:any =[
+  'https://github.com/Anja313',
+  'https://www.linkedin.com/in/anja-hovhannisyan-a252b6aa/',
   'https://www.xing.com/profile/Anja_Hovhannisyan/cv'
-]
+  ]
 
 constructor(){}
 

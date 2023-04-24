@@ -8,8 +8,7 @@
 
       <div class="rightContain">
          <div *ngFor="let icon of icons; let i = index">
-          <img [src]="icons[i]" alt="" >
-           </div>
+          <img (click)="openIcanLink(i)" [src]="icons[i]" alt="" target="blank">
       </div>
 
    </div>
