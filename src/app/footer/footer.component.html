@@ -1,0 +1,17 @@
+<div class="wholeContain "> 
+
+      <div class="leftContain">
+         <a routerLink="/imprint"  target="blank">Legal Notice</a> <br>
+         <p>@ 2023 by Anja Hovhannisyan</p>
+    
+      </div>
+
+      <div class="rightContain">
+         <div *ngFor="let icon of icons; let i = index">
+          <img [src]="icons[i]" alt="" >
+           </div>
+      </div>
+
+   </div>
+
+

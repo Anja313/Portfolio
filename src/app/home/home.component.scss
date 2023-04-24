@@ -1,0 +1,180 @@
+.background{
+
+padding: 5% 0;
+    display: flex;
+}
+  
+
+
+.contents{
+
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+
+
+
+
+button {
+  height: 60px;
+  width: 200px;
+  background-color: black;
+  border: 2px solid turquoise;
+  color: turquoise;
+  cursor: pointer;
+
+
+  &:hover {
+    color: white;
+    background-color: turquoise;
+  }
+}
+
+}
+
+span{
+   color: white;
+   font-family: 'Inter';
+   font-style: normal;
+   font-weight: 700;
+   font-size: 64px;
+   line-height: 90px;
+
+   
+}
+
+// ------------------------------------------------------------
+
+
+
+
+
+.imgBackground {
+ 
+  height: 350px;
+  width: 350px;
+  object-fit: contain;
+  background-color: #FA2759;
+  border-radius: 100%;
+ 
+  
+}
+
+
+
+
+
+
+
+
+
+  @media(max-width: 1073px) {
+
+     span{
+        font-size: 50px;
+        font-weight:lighter;
+     }
+
+    
+  .imgBackground {
+ 
+    height: 260px;
+    width: 260px;
+   
+   
+    
+  }
+   
+    
+  }
+
+
+
+
+
+
+@media(max-width: 897px) {
+   
+
+    span{
+        font-size: 40px;
+        line-height: 60px;
+     }
+
+    }
+
+
+
+
+
+
+@media(max-width: 794px) {
+
+
+span{
+    font-size: 35px;
+    line-height: 50px;
+    
+   
+ }
+    
+
+
+
+
+}
+
+
+
+
+
+
+    @media(max-width: 700px) {
+    
+   
+        .contents{
+           
+            display: flex;
+            flex-direction: column-reverse;
+            align-items: center;
+            justify-content: center;
+           
+         
+        
+    
+  
+        
+        
+        
+        button {
+        
+            width: 70vw;
+            
+        
+        
+        
+        }
+  
+span{
+    font-size: 30px;
+    line-height: 45px;
+    
+   
+ }
+    
+
+ 
+        
+        }
+    
+    }
+
+
+
+
+
+
+    

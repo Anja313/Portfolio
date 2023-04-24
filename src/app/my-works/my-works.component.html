@@ -1,0 +1,31 @@
+
+<div class="--allPages">
+
+  <h1 class="--pageTitle">My Work's</h1>
+
+
+    <div class="buttons ">
+      <button (click)="button = 1" >All</button>
+      <button (click)="button = 2" >Angular</button>
+      <button (click)="button = 3" >JavaScript</button>
+    </div> 
+
+
+  <div class="workContain">
+      <div class="box" *ngFor="let work of works; let i = index" [class.d-none]= 
+      "(button == 2 && work['type'] == 'JS') || (button == 3 && work['type'] == 'Ang')">
+          <img [src]="work.img" class="immage">
+
+              <div class="infoAboutProject">
+                    <h2 style="color: #FA2759">{{work['title']}}</h2>
+                    <span>{{work.description}}</span>
+
+                  <div class="buttonToProject" >
+                    <a [href]="work.link" target="_blank">Try out</a>
+                    <a [href]="work.github" target="_blank">Github</a>
+                  </div>
+
+            </div>
+      </div> 
+
+  </div>

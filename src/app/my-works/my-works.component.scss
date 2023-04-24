@@ -1,0 +1,125 @@
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+ 
+
+  button {
+    height: 70px;
+    width: 128px;
+    border-radius: 6%;
+    font-size: 18px;
+    margin: 5% 2%;
+    transition: background-color 125ms ease-in-out;
+    background-color: black;
+    border: 2px solid rgb(64, 224, 208);
+    color: turquoise;
+    cursor: pointer;
+
+
+      &:hover {
+        background-color: #FA2759;
+      }
+  }
+}
+
+
+// -----------------------------
+.d-none{
+  display: none;
+}
+
+
+
+
+.workContain{
+
+  display: flex;
+align-items: center;
+    justify-content: center;
+    padding: 0 8% 5% 8%;
+
+   
+    flex-wrap: wrap;
+  
+
+
+    .immage{
+      height: 100%;
+      width: 100%;
+      object-fit:contain;
+      
+      cursor: pointer;
+      transition: opacity 125ms ease-in-out;
+    }
+}
+
+.box{
+  position: relative;
+  width: 350px;
+  height: 220px;
+  border: 3px solid rgb(252, 249, 250);
+  background-color: #b8a6aa;
+  margin: 1.5%;
+
+}
+
+
+.infoAboutProject{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+ font-size: 18px;
+ height: 100%;
+  width: 100%;
+  top: 0;
+  opacity: 0;
+  background-color: rgba(155, 159, 163, 0.644);
+//  color: white;
+ text-align: center;
+ 
+  // transition: opacity 125ms ease-in-out;
+  
+
+  &:hover {
+
+    opacity: 1;
+}}
+
+
+.buttonToProject{
+  display: flex;
+  margin: 8% 0;
+
+
+
+    
+   
+     
+    
+      a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50px;
+        width: 128px;
+        border-radius: 6%;
+        margin: 0% 2%;
+        text-decoration: none;
+        
+         border: 2px solid turquoise;
+        color: turquoise;
+        cursor: pointer;
+    
+    
+          &:hover {
+            background-color: #FA2759;
+          
+          }
+      }
+    }
+
+  
+  

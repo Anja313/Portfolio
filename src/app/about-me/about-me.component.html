@@ -1,0 +1,37 @@
+<div class="grayBox ">
+    <div class="--blueLine --allPages">
+            <div class="imgAboutMe">
+                <div class="myPic">
+                    <img src="#" alt="">
+                </div>
+
+                <div >
+                    <h2 style="font-size: 36px;">About me</h2>
+                    <p>"I'm a frontend developer, with a passion for structuring problems, especially simple and complex web apps,
+                        and always enjoy learning new things."</p>
+                </div>
+            </div>
+
+    </div>
+    <!-- <h1 data-aos="fade-right" data-aos-easing="ease-out-cubis">About me.</h1> -->
+
+
+    <div class="aboutPost">
+        <div *ngFor="let hobby of hobbys; let i = index" class="hobbys">
+            <div class="boxPositionOfImgTitle ">
+                    <div class="imgBackground">
+                        <img [src]="hobby.img" alt="">
+                    </div>
+
+                    <h1>{{ hobby["title"] }}</h1>
+                    <span>{{ hobby["aboutMe"] }}</span>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+
+
+
+

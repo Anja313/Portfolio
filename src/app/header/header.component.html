@@ -1,0 +1,37 @@
+  <div class="blackBackgroundBox">
+  
+  <div class="headerBox --blueLine --allPages">
+    <div class="box">
+        <img src="assets/Bild2.png">
+    </div>
+       
+        <div class="headerLink">
+          <a routerLink="/">Home</a> 
+           <a routerLink="/my-skills">MySkills</a>
+            <a routerLink="/my-works">MyWorks</a>
+            <a routerLink="/contact">Contact</a>
+        </div>
+    
+
+        <div class="headerMobil --allPages">
+            <input type="checkbox" class="d-none" id="active">
+            <label for="active" class="menu">
+                <div></div>
+                <div></div>
+                <div></div>
+            </label>
+            <label for="active" class="close" #closeBtn></label>
+            
+            <div class="fullPage ">
+                <ul>
+                    <li><a (click)="closePage()" href="#home">Home</a></li>
+                    <li><a (click)="closePage()" href="#my-skills">Skills</a></li>
+                    <li><a (click)="closePage()" href="#portfolio">Portfolio</a></li>
+                    <li><a (click)="closePage()" routerLink="/contact">Contact</a></li>
+
+               
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>

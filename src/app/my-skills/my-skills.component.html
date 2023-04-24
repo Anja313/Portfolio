@@ -1,0 +1,20 @@
+<div class="grayBox ">
+  <div class="--allPages">
+      <h1 class="--pageTitle">My Skills</h1>
+
+  
+    <div class="skills-container"> 
+  
+        <div *ngFor="let skill of skills; let i = index" class="skill-div">
+            <div class="icon-container">
+              <img [src]="skill.img" alt="">
+              <span class="title">{{skill.title}}</span>
+            
+          </div>
+            
+        </div>
+  
+      
+  </div>
+</div>
+    

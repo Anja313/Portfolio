@@ -1,0 +1,112 @@
+* {
+    font-size: 18px;
+    line-height: 28px;
+    text-align: center;
+    font-family: 'Inter'
+  }
+
+  .grayBox{
+    background-color: #131111;
+  }
+
+
+
+    .imgAboutMe{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        padding: 5% 10%;
+  
+        img {
+            height: 250px;
+            width: 250px;
+            border-radius: 100%;
+            margin-right: 70px;
+            background-color: #f14b90;
+        }
+    }
+
+ 
+
+
+
+.aboutPost {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-bottom: 30px;
+   
+    padding: 5% 0;
+      
+        
+}
+.hobbys {
+    color: white;
+    
+    img {
+        width: 45px;
+        height: 45px;
+           border-radius: 100%;
+    }
+}
+    .boxPositionOfImgTitle{
+    width: 21vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+        .imgBackground {
+            background-color: #2DFCD8;
+            width: 80px;
+            height: 80px;
+            border-radius: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+           
+        }
+
+        span {
+        padding: 0 20px;
+       
+        }
+      
+
+   
+        @media (max-width: 950px) {
+
+            .aboutPost {
+         
+                flex-direction: column;
+                align-items: center;
+                   
+            }
+
+            .boxPositionOfImgTitle{
+                width: 70vw;
+           
+            }
+
+            .imgAboutMe{
+                flex-direction: column;
+            }
+
+            .hobbys{
+                margin-bottom: 50px;
+            }
+
+            .aboutPost {
+                border-top: none;
+                
+            
+                  
+        }
+    
+        img {
+           
+            margin-right: 0 !important;
+           
+        }
+    }
