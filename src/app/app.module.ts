@@ -13,6 +13,8 @@ import { FooterComponent } from './footer/footer.component';
 import { MyWorksComponent } from './my-works/my-works.component';
 import { AllPagesComponent } from './all-pages/all-pages.component';
 import { AboutMeComponent } from './about-me/about-me.component';
+import { FormsModule } from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -30,7 +32,9 @@ import { AboutMeComponent } from './about-me/about-me.component';
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

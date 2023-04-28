@@ -13,17 +13,16 @@ ngOnInit(): void {
 
 
 
-
   works = [{
-    img: 'assets/img/iconSkills/Javascript.png',
-    title: 'El Pollo Loco',
+    img: 'assets/img/AH.png',
+    title: 'Portfolio',
     description: 'Javascript  Game',
     link: 'https://https://github.com/anja/slack-clone',
-    github: 'https://',
-    type: 'JS'
+    github: 'https://github.com/Anja313/Portfolio',
+    type: 'Ang'
   },
   {
-    img: 'assets/img/iconSkills/Angular.png',
+    img: 'assets/img/myWorks/elPollo.png',
     title: 'Join',
     description: 'javascript  (group work)',
     link: 'https://https://github.com/anja/slack-clone',
@@ -31,23 +30,23 @@ ngOnInit(): void {
     type: 'JS'
   },
   {
-    img: 'assets/img/iconSkills/html.png',
-    title: 'Slack',
+    img: 'assets/img/myWorks/join.png',
+    title: 'Join',
     description: 'angular based messaging app (group work)',
     link: 'https://',
     github: 'https://github.com/anja/slack-clone',
-    type: 'Ang'
+    type: 'JS'
   },
   {
-    img: 'assets/img/iconSkills/Javascript.png',
-    title: 'Pokedex',
-    description: 'javascript based pokedex (worked with APIs)',
-    link: 'https://anja-hovhannisyan.html',
-    github: 'https://',
-    type: 'JS'
+    img: 'assets/img/poke.png',
+    title: 'PokeDex',
+    description: 'javascript based PokeDex (worked with APIs)',
+    link: 'https://anja-hovhannisyan.developerakademie.net/Pocedex/index.html',
+    github: 'https://github.com/Anja313/PokeDex',
+    type: 'api'
   }];
 
-  button: number =0;
+  button: number =1;
 
 
 }

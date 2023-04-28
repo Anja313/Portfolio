@@ -13,7 +13,7 @@
     margin: 5% 2%;
     transition: background-color 125ms ease-in-out;
     background-color: black;
-    border: 2px solid rgb(64, 224, 208);
+    border: 2px solid #40e0d0;
     color: turquoise;
     cursor: pointer;
 
@@ -26,12 +26,6 @@
 
 
 // -----------------------------
-.d-none{
-  display: none;
-}
-
-
-
 
 .workContain{
 
@@ -48,8 +42,7 @@ align-items: center;
     .immage{
       height: 100%;
       width: 100%;
-      object-fit:contain;
-      
+      object-fit:cover;
       cursor: pointer;
       transition: opacity 125ms ease-in-out;
     }
@@ -60,7 +53,7 @@ align-items: center;
   width: 350px;
   height: 220px;
   border: 3px solid rgb(252, 249, 250);
-  background-color: #b8a6aa;
+  background-color: #f3edee;
   margin: 1.5%;
 
 }

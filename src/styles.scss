@@ -19,7 +19,7 @@ color: #2DFCD8;
 text-align: center;
 font-family: 'Inter';
 font-size: 36px;
-padding-top: 5%;
+padding: 5% 0 0 0;
 margin: 0;
 }
 
@@ -28,5 +28,17 @@ margin: 0;
 }
 
 
-// pink #FA2759
-// türkis #2DFCD8
+::-webkit-scrollbar {
+  width: 12px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #24d8b1; 
+  border-radius: 50px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #b4313c; 
+}

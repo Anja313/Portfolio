@@ -7,53 +7,61 @@ import { Component, ElementRef, ViewChild } from '@angular/core';
   styleUrls: ['./contact.component.scss']
 })
 export class ContactComponent {
-  // @ViewChild('form') form!: ElementRef;
-  // @ViewChild('name') name!: ElementRef;
-  // @ViewChild('email') email!: ElementRef;
-  // @ViewChild('message') message!: ElementRef;
-  // @ViewChild('button') button!: ElementRef;
 
-  // mailSent = false;
+  @ViewChild('form') form!: ElementRef;
+  @ViewChild('name') name!: ElementRef;
+  @ViewChild('mail') mail!: ElementRef;
+  @ViewChild('message') message!: ElementRef;
+  @ViewChild('button') button!: ElementRef;
 
-  // async sendMail() {
+  mailSent = false;
 
-  //   let name = this.name.nativeElement;
-  //   let email = this.email.nativeElement;
-  //   let message = this.message.nativeElement;
-  //   let button = this.button.nativeElement;
 
-  //   name.disabled = true;
-  //   email.disabled = true;
-  //   message.disabled = true;
-  //   button.disabled = true;
+  async sendMail() {
 
-  //   let data = new FormData();
-  //   data.append('name', name.value);
-  //   data.append('email', email.value);
-  //   data.append('message', message.value);
+    let name = this.name.nativeElement;
+    let mail = this.mail.nativeElement;
+    let message = this.message.nativeElement;
+    let button = this.button.nativeElement;
 
-  //   await fetch('https://hong-hanh-chu.developerakademie.com/send_mail/send_mail.php',
-  //     {
-  //       method: 'POST',
-  //       body: data
-  //     }
-  //   );
+    name.disabled = true;
+    mail.disabled = true;
+    message.disabled = true;
+    button.disabled = true;
 
-  //   this.mailSent = true;
 
-  //   setTimeout(() => {
-  //     this.mailSent = false;
+    // Animation 
 
-  //     name.value = '';
-  //     email.value = '';
-  //     message.value = '';
+    let data = new FormData();
+    data.append('name', name.value);
+    data.append('mail', mail.value);
+    data.append('message', message.value);
 
-  //     name.disabled = false;
-  //     email.disabled = false;
-  //     message.disabled = false;
-  //     button.disabled = false;
-  //   }, 3000);
+    // send
+    await fetch('http://anja-hovhannisyan.developerakademie.net/send_mail.php',
+      {
+        method: 'POST',
+        body: data
+      }
+    );
 
-  // }
+
+
+    this.mailSent = true;
+
+    setTimeout(() => {
+      this.mailSent = false;
+
+      name.value = '';
+      mail.value = '';
+      message.value = '';
+
+      name.disabled = false;
+      mail.disabled = false;
+      message.disabled = false;
+      button.disabled = false;
+    }, 5000);
+
+  }
 
 }

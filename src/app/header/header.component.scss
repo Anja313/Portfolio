@@ -12,11 +12,15 @@
   align-items: end;
    
   .box{
-    height: 120px;
+    height: 110px;
+   
 
       img {
         height: 150px;
         cursor: pointer;
+        margin-left: -23%;
+      
+      
     
         &:hover {
           transform: scale(1.1);
